@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-3">
+      <div class="container-fluid">
+        <span class="navbar-brand fw-bold">📰 Article Dashboard</span>
+        <div class="d-flex align-items-center gap-3">
+          <i class="bi bi-bell fs-5"></i>
+          <img src="https://i.pravatar.cc/40" class="rounded-circle" />
+        </div>
+      </div>
+    </nav>
+
+    <div class="d-flex">
+      <!-- Sidebar -->
+      <div class="sidebar p-3">
+        <h5 class="text-white mb-4">Admin Panel</h5>
+        <a class="active" href="#"
+          ><i class="bi bi-speedometer2 me-2"></i> Dashboard</a
+        >
+        <a href="#"><i class="bi bi-file-earmark-text me-2"></i> Articles</a>
+        <a href="#"><i class="bi bi-people me-2"></i> Users</a>
+        <a href="#"><i class="bi bi-tags me-2"></i> Categories</a>
+        <a href="#"><i class="bi bi-gear me-2"></i> Settings</a>
+        <hr class="border-secondary" />
+        <a href="#"><i class="bi bi-box-arrow-left me-2"></i> Logout</a>
+      </div>
+
+      <!-- Main Content -->
+      <div class="flex-grow-1 content">
+        <!-- Page Title -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h3 class="fw-bold">Article List</h3>
+          <button class="btn btn-primary rounded-pill">
+            <i class="bi bi-plus-lg"></i> New Article
+          </button>
+        </div>
+
+        <!-- Stats -->
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h6>Total Articles</h6>
+              <h3 class="fw-bold">120</h3>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h6>Published</h6>
+              <h3 class="fw-bold text-success">85</h3>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h6>Draft</h6>
+              <h3 class="fw-bold text-warning">35</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article Cards -->
+        <div class="row g-4">
+          <!-- Article Card -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 p-3">
+              <img
+                src="https://picsum.photos/400/250?random=1"
+                class="card-img-top rounded-3 mb-3"
+                alt=""
+              />
+
+              <span class="badge bg-success mb-2 w-fit">Published</span>
+
+              <h5 class="fw-bold">Introduction to Vue 3</h5>
+              <p class="text-muted small">
+                Learn the fundamentals of Vue 3 Composition API and build modern
+                web apps easily.
+              </p>
+
+              <div
+                class="d-flex justify-content-between align-items-center mt-auto"
+              >
+                <small class="text-muted">By Admin • 2026-01-20</small>
+                <div>
+                  <button class="btn btn-sm btn-outline-primary">Edit</button>
+                  <button class="btn btn-sm btn-outline-danger">Delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article Card -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 p-3">
+              <img
+                src="https://picsum.photos/400/250?random=2"
+                class="card-img-top rounded-3 mb-3"
+                alt=""
+              />
+
+              <span class="badge bg-warning text-dark mb-2">Draft</span>
+
+              <h5 class="fw-bold">Using Pinia for State</h5>
+              <p class="text-muted small">
+                Understand how to manage global state in Vue using Pinia with
+                real project patterns.
+              </p>
+
+              <div
+                class="d-flex justify-content-between align-items-center mt-auto"
+              >
+                <small class="text-muted">By Teacher • 2026-01-22</small>
+                <div>
+                  <button class="btn btn-sm btn-outline-primary">Edit</button>
+                  <button class="btn btn-sm btn-outline-danger">Delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article Card -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 p-3">
+              <img
+                src="https://picsum.photos/400/250?random=3"
+                class="card-img-top rounded-3 mb-3"
+                alt=""
+              />
+
+              <span class="badge bg-success mb-2">Published</span>
+
+              <h5 class="fw-bold">Build REST API with Node.js</h5>
+              <p class="text-muted small">
+                Step-by-step guide to building a RESTful API with Express and
+                MySQL.
+              </p>
+
+              <div
+                class="d-flex justify-content-between align-items-center mt-auto"
+              >
+                <small class="text-muted">By Admin • 2026-01-25</small>
+                <div>
+                  <button class="btn btn-sm btn-outline-primary">Edit</button>
+                  <button class="btn btn-sm btn-outline-danger">Delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
+l
